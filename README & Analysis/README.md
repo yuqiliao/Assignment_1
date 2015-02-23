@@ -12,3 +12,7 @@ I then analysized the tweets using r, with the main structure similar to what ha
 A cautinary note that the tweets that I gathered from API is up-to-date so the timing of getting the data might influence the analysis output. I have tried to run the code and to get data during different time of a day, and in different day of the week, and found the statistical significance remain unchanged.
 
 At last, I have drawed line chart using excel and later made an infography to summarize and better present the result.
+
+![GitHub Logo](/images/Comparison Chart.png)
+Format: ![Alt Text](url)
+
