@@ -19,7 +19,7 @@ The main findings are discussed below with charts and graphs.
 - Neutral words are around 50% of the tweets for each account.
 - Negative words are generally more than positive words in terms of percentage.
   - Besides New York Times, NPR News and Wall Street Journal, the percentage of negative words are bigger than positive words for other accounts.
-- The differences between the percentage of positive words and negative words vary accross different accounts
+- The differences between the percentage of positive words and negative words vary across different accounts
   - The percentage of negative words from Fox News, BBC World, Reuters and ABC News are 10 percentage points more than their positive words
 
 ###Statistical Test###
