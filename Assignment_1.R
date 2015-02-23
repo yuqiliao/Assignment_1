@@ -14,7 +14,7 @@ setwd("/Users/apple/Desktop/MSPP/2nd-Semester Course/PPOL 670-Introduction to Da
 
 ## Installing Packages that will be needed for the analysis
 doInstall <- TRUE
-toInstall <- c("ROAuth", "twitteR", "streamR","RCurl","bitops")
+toInstall <- c("ROAuth", "twitteR", "streamR","RCurl","bitops","Rstem")
 
 if(doInstall){install.packages(toInstall, repos = "http://cran.r-project.org")}
 
@@ -57,10 +57,10 @@ account_names <- c("nytimes","nprnews","washingtonpost","CNN","foxnews","huffing
                    "BBCWorld","Reuters","ABC","WSJ")
 
 ## Using the function wrtitten by Pablo Barbera to capture the most recent tweets 
-## and store the raw JSON data
+## and store the csv data
 source("functions.r")
 
-for(i in 1:10){name <- paste("tweets", i, ".json", sep = "")
+for(i in 1:10){name <- paste("tweets", i, ".csv", sep = "")
                getTimeline(filename=name, screen_name=account_names[i], 
                            n=500, oauth=my_oauth, trim_user="false")
                 }
@@ -68,7 +68,7 @@ for(i in 1:10){name <- paste("tweets", i, ".json", sep = "")
 ## Loading tweets that are just created and stored
 library(streamR)
 
-for (i in 1:10){name <- paste("tweets", i, ".json", sep = "")
+for (i in 1:10){name <- paste("tweets", i, ".csv", sep = "")
                 assign(paste("tweets", i, sep = ""), parseTweets(name))
                 }
 
@@ -97,6 +97,7 @@ clean_tweets <- function(text){
 
 
 ## Cleaning the tweets
+## Download Rstem package from http://www.omegahat.org/Rstem/ and installed it to get rid of the error message
 text1 <- clean_tweets(tweets1$text)
 text2 <- clean_tweets(tweets2$text)
 text3 <- clean_tweets(tweets3$text)
