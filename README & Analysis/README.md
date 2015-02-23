@@ -13,6 +13,7 @@ A cautinary note that the tweets that I gathered from API is up-to-date so the t
 
 At last, I have drawed line chart using excel and later made an infography to summarize and better present the result.
 
-![GitHub Logo](/images/Comparison Chart.png)
-Format: ![Alt Text](url)
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](https://github.com/yuqiliao/Assignment_1/blob/master/Comparison%20Chart.png)
+
 
